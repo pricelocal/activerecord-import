@@ -101,4 +101,12 @@ ActiveRecord::Schema.define do
     t.boolean :active, :default => false
     t.text    :data
   end
+
+  create_table "promotions", primary_key: "promotion_id", force: :cascade do |t|
+    t.string   :code
+    t.string   :description
+    t.decimal  :discount
+  end
+
+  add_index :promotions, [:code], :unique => true, :name => 'uk_code'
 end
