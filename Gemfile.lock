@@ -92,7 +92,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  activerecord (~> 3.0)
   activerecord-jdbcmysql-adapter
   debugger
   delorean (~> 0.2.0)
